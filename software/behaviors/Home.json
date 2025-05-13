@@ -1,0 +1,430 @@
+{
+    "Name": "Home",
+    "Keyframes": [
+        {
+            "HasEmote": "False",
+            "HasAudio": "False",
+            "HasJoints": "True",
+            "WaitTime": 2000,
+            "JointMoveTime": 1,
+            "JointAngles": [
+                {
+                    "Joint": "LeftChest",
+                    "Angle": 115
+                },
+                {
+                    "Joint": "LeftShoulder",
+                    "Angle": 180
+                },
+                {
+                    "Joint": "LeftBicep",
+                    "Angle": 115
+                },
+                {
+                    "Joint": "LeftElbow",
+                    "Angle": 105
+                },
+                {
+                    "Joint": "LeftHip",
+                    "Angle": 96
+                },
+                {
+                    "Joint": "LeftKnee",
+                    "Angle": 80
+                },
+                {
+                    "Joint": "LeftAnkle",
+                    "Angle": 90
+                },
+                {
+                    "Joint": "RightChest",
+                    "Angle": 135
+                },
+                {
+                    "Joint": "RightShoulder",
+                    "Angle": 85
+                },
+                {
+                    "Joint": "RightBicep",
+                    "Angle": 115
+                },
+                {
+                    "Joint": "RightElbow",
+                    "Angle": 90
+                },
+                {
+                    "Joint": "RightHip",
+                    "Angle": 84
+                },
+                {
+                    "Joint": "RightKnee",
+                    "Angle": 90
+                },
+                {
+                    "Joint": "RightAnkle",
+                    "Angle": 80
+                },
+                {
+                    "Joint": "HeadNod",
+                    "Angle": 125
+                },
+                {
+                    "Joint": "HeadTurn",
+                    "Angle": 120
+                },
+                {
+                    "Joint": "HeadTilt",
+                    "Angle": 125
+                },
+                {
+                    "Joint": "TorsoBow",
+                    "Angle": 125
+                },
+                {
+                    "Joint": "TorsoTilt",
+                    "Angle": 115
+                }
+            ]
+        },
+        {
+            "HasEmote": "False",
+            "HasAudio": "False",
+            "HasJoints": "True",
+            "WaitTime": 2000,
+            "JointMoveTime": 1,
+            "JointAngles": [
+                {
+                    "Joint": "LeftChest",
+                    "Angle": 30
+                },
+                {
+                    "Joint": "LeftShoulder",
+                    "Angle": 30
+                },
+                {
+                    "Joint": "LeftBicep",
+                    "Angle": 20
+                },
+                {
+                    "Joint": "LeftElbow",
+                    "Angle": 60
+                },
+                {
+                    "Joint": "LeftHip",
+                    "Angle": 10
+                },
+                {
+                    "Joint": "LeftKnee",
+                    "Angle": 0
+                },
+                {
+                    "Joint": "LeftAnkle",
+                    "Angle": 55
+                },
+                {
+                    "Joint": "RightChest",
+                    "Angle": 60
+                },
+                {
+                    "Joint": "RightShoulder",
+                    "Angle": 70
+                },
+                {
+                    "Joint": "RightBicep",
+                    "Angle": 20
+                },
+                {
+                    "Joint": "RightElbow",
+                    "Angle": 20
+                },
+                {
+                    "Joint": "RightHip",
+                    "Angle": 84
+                },
+                {
+                    "Joint": "RightKnee",
+                    "Angle": 90
+                },
+                {
+                    "Joint": "RightAnkle",
+                    "Angle": 50
+                },
+                {
+                    "Joint": "HeadNod",
+                    "Angle": 110
+                },
+                {
+                    "Joint": "HeadTurn",
+                    "Angle": 70
+                },
+                {
+                    "Joint": "HeadTilt",
+                    "Angle": 100
+                },
+                {
+                    "Joint": "TorsoBow",
+                    "Angle": 100
+                },
+                {
+                    "Joint": "TorsoTilt",
+                    "Angle": 80
+                }
+            ]
+        },
+        {
+            "HasEmote": "False",
+            "HasAudio": "False",
+            "HasJoints": "True",
+            "WaitTime": 2000,
+            "JointMoveTime": 1,
+            "JointAngles": [
+                {
+                    "Joint": "LeftChest",
+                    "Angle": 115
+                },
+                {
+                    "Joint": "LeftShoulder",
+                    "Angle": 180
+                },
+                {
+                    "Joint": "LeftBicep",
+                    "Angle": 115
+                },
+                {
+                    "Joint": "LeftElbow",
+                    "Angle": 105
+                },
+                {
+                    "Joint": "LeftHip",
+                    "Angle": 96
+                },
+                {
+                    "Joint": "LeftKnee",
+                    "Angle": 80
+                },
+                {
+                    "Joint": "LeftAnkle",
+                    "Angle": 90
+                },
+                {
+                    "Joint": "RightChest",
+                    "Angle": 135
+                },
+                {
+                    "Joint": "RightShoulder",
+                    "Angle": 85
+                },
+                {
+                    "Joint": "RightBicep",
+                    "Angle": 115
+                },
+                {
+                    "Joint": "RightElbow",
+                    "Angle": 90
+                },
+                {
+                    "Joint": "RightHip",
+                    "Angle": 84
+                },
+                {
+                    "Joint": "RightKnee",
+                    "Angle": 90
+                },
+                {
+                    "Joint": "RightAnkle",
+                    "Angle": 80
+                },
+                {
+                    "Joint": "HeadNod",
+                    "Angle": 125
+                },
+                {
+                    "Joint": "HeadTurn",
+                    "Angle": 120
+                },
+                {
+                    "Joint": "HeadTilt",
+                    "Angle": 125
+                },
+                {
+                    "Joint": "TorsoBow",
+                    "Angle": 125
+                },
+                {
+                    "Joint": "TorsoTilt",
+                    "Angle": 115
+                }
+            ]
+        },{
+            "HasEmote": "False",
+            "HasAudio": "False",
+            "HasJoints": "True",
+            "WaitTime": 2000,
+            "JointMoveTime": 1,
+            "JointAngles": [
+                {
+                    "Joint": "LeftChest",
+                    "Angle": 180
+                },
+                {
+                    "Joint": "LeftShoulder",
+                    "Angle": 195
+                },
+                {
+                    "Joint": "LeftBicep",
+                    "Angle": 180
+                },
+                {
+                    "Joint": "LeftElbow",
+                    "Angle": 180
+                },
+                {
+                    "Joint": "LeftHip",
+                    "Angle": 96
+                },
+                {
+                    "Joint": "LeftKnee",
+                    "Angle": 85
+                },
+                {
+                    "Joint": "LeftAnkle",
+                    "Angle": 120
+                },
+                {
+                    "Joint": "RightChest",
+                    "Angle": 180
+                },
+                {
+                    "Joint": "RightShoulder",
+                    "Angle": 240
+                },
+                {
+                    "Joint": "RightBicep",
+                    "Angle": 180
+                },
+                {
+                    "Joint": "RightElbow",
+                    "Angle": 155
+                },
+                {
+                    "Joint": "RightHip",
+                    "Angle": 170
+                },
+                {
+                    "Joint": "RightKnee",
+                    "Angle": 180
+                },
+                {
+                    "Joint": "RightAnkle",
+                    "Angle": 120
+                },
+                {
+                    "Joint": "HeadNod",
+                    "Angle": 155
+                },
+                {
+                    "Joint": "HeadTurn",
+                    "Angle": 160
+                },
+                {
+                    "Joint": "HeadTilt",
+                    "Angle": 145
+                },
+                {
+                    "Joint": "TorsoBow",
+                    "Angle": 150
+                },
+                {
+                    "Joint": "TorsoTilt",
+                    "Angle": 160
+                }
+            ]
+        },{
+            "HasEmote": "False",
+            "HasAudio": "False",
+            "HasJoints": "True",
+            "WaitTime": 2000,
+            "JointMoveTime": 1,
+            "JointAngles": [
+                {
+                    "Joint": "LeftChest",
+                    "Angle": 115
+                },
+                {
+                    "Joint": "LeftShoulder",
+                    "Angle": 180
+                },
+                {
+                    "Joint": "LeftBicep",
+                    "Angle": 115
+                },
+                {
+                    "Joint": "LeftElbow",
+                    "Angle": 93
+                },
+                {
+                    "Joint": "LeftHip",
+                    "Angle": 96
+                },
+                {
+                    "Joint": "LeftKnee",
+                    "Angle": 84
+                },
+                {
+                    "Joint": "LeftAnkle",
+                    "Angle": 98
+                },
+                {
+                    "Joint": "RightChest",
+                    "Angle": 135
+                },
+                {
+                    "Joint": "RightShoulder",
+                    "Angle": 85
+                },
+                {
+                    "Joint": "RightBicep",
+                    "Angle": 115
+                },
+                {
+                    "Joint": "RightElbow",
+                    "Angle": 90
+                },
+                {
+                    "Joint": "RightHip",
+                    "Angle": 84
+                },
+                {
+                    "Joint": "RightKnee",
+                    "Angle": 90
+                },
+                {
+                    "Joint": "RightAnkle",
+                    "Angle": 79
+                },
+                {
+                    "Joint": "HeadNod",
+                    "Angle": 125
+                },
+                {
+                    "Joint": "HeadTurn",
+                    "Angle": 120
+                },
+                {
+                    "Joint": "HeadTilt",
+                    "Angle": 125
+                },
+                {
+                    "Joint": "TorsoBow",
+                    "Angle": 125
+                },
+                {
+                    "Joint": "TorsoTilt",
+                    "Angle": 113
+                }
+            ]
+        }
+        
+        
+    ]
+}
