@@ -58,4 +58,4 @@ sami = SamiControll(arduino_port='/dev/tty/USB0')
 credentials = open("ollama_credentials", "r").readline()
 ai_client = OllamaWrapper(model="gemma3:1b", credentials=credentials)
 
-create_character()
+characterCreation()
