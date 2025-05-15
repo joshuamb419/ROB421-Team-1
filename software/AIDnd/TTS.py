@@ -1,21 +1,16 @@
 from gtts import gTTS
-import sounddevice as sd
-import soundfile as sf
+import playsound
 
 def speak(text):
     tts = gTTS(text)
     tts.save('response.wav')
 
-    data, fs = sf.read('response.wav', dtype='float32')  
-    sd.play(data, fs)
-    status = sd.wait()
+    playsound.playsound('response.wav')
     return
 
 async def speak_async(text):
     tts = gTTS(text)
     tts.save('response.wav')
 
-    data, fs = sf.read('response.wav', dtype='float32')  
-    sd.play(data, fs)
-    status = sd.wait()
+    playsound.playsound('response.wav')
     return

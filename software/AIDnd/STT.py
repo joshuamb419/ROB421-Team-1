@@ -1,6 +1,8 @@
 import whisper
+import Record
 
-def transcribe(audio):
+def transcribe():
     model = whisper.load_model("tiny.en")
-    result = model.transcribe(audio)
+    Record.record()
+    result = model.transcribe('input.wav')
     return result["text"]
