@@ -19,6 +19,8 @@ class OllamaWrapper:
                 host = self.host
             )
 
+    # Returns response to 'msg'
+    # This function takes into account and updates the message history
     def chat(self, msg):
         self.messages.append({'role': 'user', 'content':msg})
 
@@ -27,3 +29,15 @@ class OllamaWrapper:
         self.messages.append(response)
 
         return response.content
+    
+    # Returns the message history
+    def getMessageHistory(self):
+        return self.messages
+    
+    # Sets the message history
+    def setMessageHistory(self, history):
+        self.messages = history
+    
+    # Resets the message history
+    def reset(self):
+        self.messages = []
