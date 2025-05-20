@@ -1,5 +1,5 @@
 {
-    "Name": "Concert",
+    "Name": "DoubleWave",
     "Keyframes": [
       {
         "HasEmote": "True",
@@ -17,8 +17,18 @@
           {
             "Joint": "RightShoulder",
             "Angle": 180
-          },
-
+          }
+          
+        ]
+      },
+      {
+        "HasEmote": "True",
+        "HasAudio": "False",
+        "HasJoints": "True",
+        "Expression": "Happy",
+        "WaitTime": 1500,
+        "JointMoveTime": 1,
+        "JointAngles": [
           {
             "Joint": "LeftBicep",
             "Angle": 60
@@ -30,7 +40,6 @@
           
         ]
       },
-
       {
         "HasEmote": "True",
         "HasAudio": "False",
@@ -42,25 +51,6 @@
           {
             "Joint": "LeftElbow",
             "Angle": 150
-          },
-          {
-            "Joint": "RightElbow",
-            "Angle": 140
-          }
-          
-        ]
-      },
-      {
-        "HasEmote": "True",
-        "HasAudio": "False",
-        "HasJoints": "True",
-        "Expression": "Happy",
-        "WaitTime": 1500,
-        "JointMoveTime": 1,
-        "JointAngles": [
-          {
-            "Joint": "LeftElbow",
-            "Angle": 70
           },
           {
             "Joint": "RightElbow",
@@ -79,30 +69,11 @@
         "JointAngles": [
           {
             "Joint": "LeftElbow",
-            "Angle": 150
+            "Angle": 105
           },
           {
             "Joint": "RightElbow",
-            "Angle": 140
-          }
-          
-        ]
-      },
-      {
-        "HasEmote": "True",
-        "HasAudio": "False",
-        "HasJoints": "True",
-        "Expression": "Happy",
-        "WaitTime": 1500,
-        "JointMoveTime": 1,
-        "JointAngles": [
-          {
-            "Joint": "LeftElbow",
-            "Angle": 70
-          },
-          {
-            "Joint": "RightElbow",
-            "Angle": 60
+            "Angle": 100
           }
           
         ]
@@ -121,7 +92,7 @@
           },
           {
             "Joint": "RightElbow",
-            "Angle": 140
+            "Angle": 60
           }
           
         ]
@@ -136,11 +107,11 @@
         "JointAngles": [
           {
             "Joint": "LeftElbow",
-            "Angle": 70
+            "Angle": 105
           },
           {
             "Joint": "RightElbow",
-            "Angle": 60
+            "Angle": 100
           }
           
         ]
