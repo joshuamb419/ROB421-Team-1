@@ -18,7 +18,9 @@ def create_character():
 
     # Save class and prompt ai for a message
     character_class = STT.transcribe()
+    print(character_class)
     ai_response = ai_client.chat(f"Write a one sentence welcome for a dnd player of class {character_class}")
+    print(ai_response)
     TTS.speak(ai_response)
 
     # Prompt player for a race
@@ -53,9 +55,10 @@ def characterCreation():
     ai_response = ai_client.chat(f"You are a dungeon master for a dnd campaign. Welcome your breifly players to the campaign and in three sentences or less describe the opening scene. The following is a list of the players character:\n{characters_txt}")
     TTS.speak(ai_response)
 
-sami = SamiControll(arduino_port='/dev/tty/USB0')
+sami = SamiControll(arduino_port='COM5')
 
 credentials = open("ollama_credentials", "r").readline()
 ai_client = OllamaWrapper(model="gemma3:1b", credentials=credentials)
+# print(ai_client.chat("Hello?"))
 
 characterCreation()

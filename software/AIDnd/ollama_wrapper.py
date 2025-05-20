@@ -24,7 +24,8 @@ class OllamaWrapper:
     def chat(self, msg):
         self.messages.append({'role': 'user', 'content':msg})
 
-        response = self.client.chat(model=self.model).message
+        response = self.client.chat(model=self.model, messages=self.messages).message
+        # print(response)
 
         self.messages.append(response)
 
