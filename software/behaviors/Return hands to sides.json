@@ -3,9 +3,10 @@
     "Keyframes": [
         {
             "HasEmote": "True",
-            "HasAudio": "False",
+            "HasAudio": "True",
             "HasJoints": "True",
             "Expression": "Happy",
+            "AudioClip": "intro",
             "WaitTime": 1500,
             "JointMoveTime": 1,
             "JointAngles": [
@@ -32,6 +33,14 @@
                 {
                     "Joint": "LeftElbow",
                     "Angle": 105
+                },
+                {
+                    "Joint": "TorsoBow",
+                    "Angle": 125
+                },
+                {
+                    "Joint": "TorsoTilt",
+                    "Angle": 115
                 }
 
                 
