@@ -3,7 +3,7 @@
     "Keyframes": [
         {
             "HasEmote": "True",
-            "HasAudio": "True",
+            "HasAudio": "False",
             "HasJoints": "True",
             "Expression": "Happy",
             "AudioClip": "intro",
