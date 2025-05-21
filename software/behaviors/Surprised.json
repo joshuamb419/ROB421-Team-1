@@ -41,7 +41,7 @@
 			"HasAudio": "False",
 			"AudioClip": "intro",
 			"HasJoints": "True",
-			"Expression": "Up",
+			"Expression": "Down",
 			"WaitTime": 100,
 			"JointMoveTime": 1,
 			"JointAngles": [
@@ -64,7 +64,7 @@
 			"HasAudio": "False",
 			"AudioClip": "intro",
 			"HasJoints": "True",
-			"Expression": "Confused",
+			"Expression": "Up",
 			"WaitTime": 100,
 			"JointMoveTime": 1,
 			"JointAngles": [
@@ -87,7 +87,7 @@
 			"HasAudio": "False",
 			"AudioClip": "intro",
 			"HasJoints": "True",
-			"Expression": "Confused",
+			"Expression": "Down",
 			"WaitTime": 100,
 			"JointMoveTime": 1,
 			"JointAngles": [
