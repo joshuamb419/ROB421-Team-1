@@ -50,7 +50,7 @@
           "MaxAngle": 85
         },
         {
-          "JointName": "LeftAnkle",
+          "JointName": "RightAnkle",
           "JointID": 17,
           "HomeAngle": 90,
           "MinAngle": 55,
@@ -106,7 +106,7 @@
           "MaxAngle": 180
         },
         {
-          "JointName": "RightAnkle",
+          "JointName": "LeftAnkle",
           "JointID": 14,
           "HomeAngle": 80,
           "MinAngle": 50,
