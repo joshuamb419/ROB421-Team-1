@@ -1,30 +1,6 @@
 {
-    "Name": "LeftPointMiddle",
+    "Name": "LeftPointBottomMiddle",
     "Keyframes": [
-        {
-            "HasEmote": "True",
-            "HasAudio": "False",
-            "HasJoints": "True",
-            "Expression": "Happy",
-            "WaitTime": 1500,
-            "JointMoveTime": 1,
-            "JointAngles": [
-                {
-                    "Joint": "LeftShoulder",
-                    "Angle": 180
-                },
-                {
-                    "Joint": "LeftBicep",
-                    "Angle": 115
-                },
-                {
-                    "Joint": "LeftElbow",
-                    "Angle": 105
-                }
-
-                
-            ]
-        },
         {
             "HasEmote": "True",
             "HasAudio": "False",
@@ -44,6 +20,14 @@
                 {
                     "Joint": "LeftElbow",
                     "Angle": 150
+                },
+                {
+                    "Joint": "TorsoBow",
+                    "Angle": 125
+                },
+                {
+                    "Joint": "TorsoTilt",
+                    "Angle": 115
                 }
 
                 

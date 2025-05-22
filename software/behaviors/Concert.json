@@ -18,7 +18,7 @@
             "Joint": "RightShoulder",
             "Angle": 180
           }
-          
+
         ]
       },
       {
@@ -37,7 +37,7 @@
             "Joint": "RightBicep",
             "Angle": 180
           }
-          
+
         ]
       },
       {
@@ -56,7 +56,7 @@
             "Joint": "RightElbow",
             "Angle": 140
           }
-          
+
         ]
       },
       {
@@ -75,7 +75,7 @@
             "Joint": "RightElbow",
             "Angle": 60
           }
-          
+
         ]
       },
       {
@@ -94,7 +94,7 @@
             "Joint": "RightElbow",
             "Angle": 140
           }
-          
+
         ]
       },
       {
@@ -113,7 +113,7 @@
             "Joint": "RightElbow",
             "Angle": 60
           }
-          
+
         ]
       },
       {
@@ -132,7 +132,7 @@
             "Joint": "RightElbow",
             "Angle": 140
           }
-          
+
         ]
       },
       {
@@ -151,8 +151,8 @@
             "Joint": "RightElbow",
             "Angle": 60
           }
-          
+
         ]
       }
     ]
-  }
+}
