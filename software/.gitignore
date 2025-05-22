@@ -167,3 +167,6 @@ ollama_credentials
 
 # Audio Files
 response.mp3
+response.wav
+input.wav
+input.mp3
