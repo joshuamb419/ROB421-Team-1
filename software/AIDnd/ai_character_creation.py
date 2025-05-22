@@ -6,14 +6,14 @@ import STT
 import TTS
 
 async def talk_while_moving(text, behavior):
-    asyncio.gather(sami.perform_behavior_async(behavior), TTS.speak_async(text))
+    await asyncio.gather(sami.perform_behavior_async(behavior), TTS.speak_async(text))
 
 def create_character():
     # Prompt the player for a class    
     asyncio.run(talk_while_moving("What class do you want to be? You can select from the following", "GestureWithRightHand.json"))
     asyncio.run(talk_while_moving("Wizard", "RightPointTop.json"))
     asyncio.run(talk_while_moving("Fighter", "RightPointMiddle.json"))
-    asyncio.run(talk_while_moving("Wizard", "RightPointBottomMiddle.json"))
+    asyncio.run(talk_while_moving("Druid", "RightPointBottomMiddle.json"))
     asyncio.run(talk_while_moving("Or any other dnd class", "RightPointBottom.json"))
 
     # Save class and prompt ai for a message
@@ -55,7 +55,7 @@ def characterCreation():
     ai_response = ai_client.chat(f"You are a dungeon master for a dnd campaign. Welcome your breifly players to the campaign and in three sentences or less describe the opening scene. The following is a list of the players character:\n{characters_txt}")
     TTS.speak(ai_response)
 
-sami = SamiControll(arduino_port='COM5')
+sami = SamiControll(arduino_port='/dev/ttyUSB0')
 
 credentials = open("ollama_credentials", "r").readline()
 ai_client = OllamaWrapper(model="gemma3:1b", credentials=credentials)

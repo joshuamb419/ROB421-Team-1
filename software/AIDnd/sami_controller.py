@@ -111,7 +111,7 @@ class SamiControll:
                 angles = [j['Angle'] for j in frame['JointAngles']]
                 move_time = frame["JointMoveTime"]
                 self.send_joint_command(joint_ids, angles, move_time)
-            asyncio.sleep(frame["WaitTime"] / 1000)
+            await asyncio.sleep(frame["WaitTime"] / 1000)
 
     # Taken from JamieUI
     def load_behavior(self, behavior_file):
