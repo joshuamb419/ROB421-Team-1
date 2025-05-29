@@ -1,3 +1,7 @@
+#include <NeoEyes.h>
+#include <NeoEyes_DefaultEmotes.h>
+#include <NeoEyes_Defaults.h>
+
 /*************************************************** 
  Arduino motor controller and logic for SAMI, the open-source robot,
  developed as a live-in exercise and game buddy in skileld nursing facilities
@@ -65,13 +69,13 @@ void loop() {
   // Check for any serial communications
   recvWithStartEndMarkers();
   if(newData) {
-    #if defined(DEBUG) && DEBUG
+    #if defined(DEBUG)
        Serial.print("Message type: ");
        Serial.println(currMsgType);
     #endif
     // If we got a new emote instruction, then set the eyes
     if(newEmote) {
-    #if defined(DEBUG) && DEBUG
+    #if defined(DEBUG)
         Serial.print("Emote Recieved: ");
         Serial.println(currentEmote);
     #endif
@@ -79,7 +83,7 @@ void loop() {
       newEmote = false;
     }
     else if (updateRelayStates) {
-    #if defined(DEBUG) && DEBUG
+    #if defined(DEBUG)
         Serial.print("Relay Set: ");
         Serial.print(relaysToSet);
         Serial.print(" to state: ");
@@ -90,7 +94,7 @@ void loop() {
     }
     // If we got new joint data
     else if(newJoints) {
-      #if defined(DEBUG) && DEBUG
+      #if defined(DEBUG)
         Serial.print("Number Joints Recieved: ");
         Serial.println(numJointsRecv);
       #endif

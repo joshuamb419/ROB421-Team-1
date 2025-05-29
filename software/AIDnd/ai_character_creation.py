@@ -13,7 +13,7 @@ def create_character():
     asyncio.run(talk_while_moving("What class do you want to be? You can select from the following", "GestureWithRightHand.json"))
     asyncio.run(talk_while_moving("Wizard", "RightPointTop.json"))
     asyncio.run(talk_while_moving("Fighter", "RightPointMiddle.json"))
-    asyncio.run(talk_while_moving("Wizard", "RightPointBottomMiddle.json"))
+    asyncio.run(talk_while_moving("Rogue", "RightPointBottomMiddle.json"))
     asyncio.run(talk_while_moving("Or any other dnd class", "RightPointBottom.json"))
 
     # Save class and prompt ai for a message

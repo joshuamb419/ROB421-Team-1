@@ -1,0 +1,25 @@
+{
+    "Name": "DTest",
+    "Keyframes": [
+        { "HasEmote": "True", "HasAudio": "False", "HasJoints": "False", "Expression": "D_1", "WaitTime": 800 },
+        { "HasEmote": "True", "HasAudio": "False", "HasJoints": "False", "Expression": "D_2", "WaitTime": 800 },
+        { "HasEmote": "True", "HasAudio": "False", "HasJoints": "False", "Expression": "D_3", "WaitTime": 800 },
+        { "HasEmote": "True", "HasAudio": "False", "HasJoints": "False", "Expression": "D_4", "WaitTime": 800 },
+        { "HasEmote": "True", "HasAudio": "False", "HasJoints": "False", "Expression": "D_5", "WaitTime": 800 },
+        { "HasEmote": "True", "HasAudio": "False", "HasJoints": "False", "Expression": "D_6", "WaitTime": 800 },
+        { "HasEmote": "True", "HasAudio": "False", "HasJoints": "False", "Expression": "D_7", "WaitTime": 800 },
+        { "HasEmote": "True", "HasAudio": "False", "HasJoints": "False", "Expression": "D_8", "WaitTime": 800 },
+        { "HasEmote": "True", "HasAudio": "False", "HasJoints": "False", "Expression": "D_9", "WaitTime": 800 },
+        { "HasEmote": "True", "HasAudio": "False", "HasJoints": "False", "Expression": "D_10", "WaitTime": 800 },
+        { "HasEmote": "True", "HasAudio": "False", "HasJoints": "False", "Expression": "D_11", "WaitTime": 800 },
+        { "HasEmote": "True", "HasAudio": "False", "HasJoints": "False", "Expression": "D_12", "WaitTime": 800 },
+        { "HasEmote": "True", "HasAudio": "False", "HasJoints": "False", "Expression": "D_13", "WaitTime": 800 },
+        { "HasEmote": "True", "HasAudio": "False", "HasJoints": "False", "Expression": "D_14", "WaitTime": 800 },
+        { "HasEmote": "True", "HasAudio": "False", "HasJoints": "False", "Expression": "D_15", "WaitTime": 800 },
+        { "HasEmote": "True", "HasAudio": "False", "HasJoints": "False", "Expression": "D_16", "WaitTime": 800 },
+        { "HasEmote": "True", "HasAudio": "False", "HasJoints": "False", "Expression": "D_17", "WaitTime": 800 },
+        { "HasEmote": "True", "HasAudio": "False", "HasJoints": "False", "Expression": "D_18", "WaitTime": 800 },
+        { "HasEmote": "True", "HasAudio": "False", "HasJoints": "False", "Expression": "D_19", "WaitTime": 800 },
+        { "HasEmote": "True", "HasAudio": "False", "HasJoints": "False", "Expression": "D_20", "WaitTime": 800 }
+    ]
+}
