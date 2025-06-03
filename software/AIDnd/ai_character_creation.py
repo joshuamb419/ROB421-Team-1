@@ -49,7 +49,8 @@ def characterCreation():
     for i in range(player_count):
         character = create_character()
         characters.append(character)
-        characters_txt = f"Player {i+1}: Class {character[0]}, Race {character[1]}, Name {character[2]}\n"
+        characters_txt += f"Player {i+1}: Class {character[0]}, Race {character[1]}, Name {character[2]}\n"
+        print(characters_txt)
         ai_client.reset()
 
     ai_response = ai_client.chat(f"You are a dungeon master for a dnd campaign. Welcome your breifly players to the campaign and in three sentences or less describe the opening scene. The following is a list of the players character:\n{characters_txt}")
