@@ -2,7 +2,7 @@
 
 import pyaudio
 import wave
-import Keyboard as Key
+import keyboard as Key
 import time
 
 def key_press(hotkey):
@@ -11,7 +11,7 @@ def key_press(hotkey):
     else:
         return False
 
-def record(chunk=1024, sample_format = pyaudio.paInt16, channels=2, fs=44100, seconds=3, filename="input.wav", hotkey = 'space'):
+def record(chunk=1024, sample_format = pyaudio.paInt16, channels=2, fs=44100, filename="input.wav", hotkey = 'space'):
     p = pyaudio.PyAudio()  # Create an interface to PortAudio
 
     stream = p.open(format=sample_format,
@@ -23,16 +23,15 @@ def record(chunk=1024, sample_format = pyaudio.paInt16, channels=2, fs=44100, se
     print(f'Press {hotkey} to begin listening')
 
     frames = []  # Initialize array to store frames
-
-    # Store data in chunks
-    Key.wait(hotkey)
+  
+    Key.wait(hotkey) # Wait until hotjey is pressed
     time.sleep(0.1)
-    print(listening)
-    while key_press(hotkey):
+    print("Listening")
+    while key_press(hotkey): #stores audio data until hotkey is released
         data = stream.read(chunk)
         frames.append(data)
         
-    print('Listening Stopped')
+    print("Listening Stopped")
     
     # Stop and close the stream 
     stream.stop_stream()
@@ -48,4 +47,5 @@ def record(chunk=1024, sample_format = pyaudio.paInt16, channels=2, fs=44100, se
     wf.setframerate(fs)
     wf.writeframes(b''.join(frames))
     wf.close()
-        
+    
+    return
