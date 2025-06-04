@@ -96,7 +96,7 @@ import time
 import serial
 import json
 from audio_manager import AudioManager
-
+ 
 class JamieControl:
     def __init__(self, 
                  arduino_port='/dev/ttyUSB0', 
