@@ -53,8 +53,8 @@ class SamiControll:
     def send_emote(self, emote_id):
         packet = [0x3C, 0x45, emote_id, 0x3E]
         self.ser.write(bytearray(packet))
-        # print("Sent emote command:", bytearray(packet))
-        # time.sleep(1)
+        print("Sent emote command:", bytearray(packet))
+        time.sleep(1)
 
     # Taken from JamieControl
     def initialize_serial_connection(self):

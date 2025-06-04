@@ -4,6 +4,7 @@ from ollama_wrapper import OllamaWrapper
 from sami_controller import SamiControll
 import STT
 import TTS
+import DiceRoll
 
 async def talk_while_moving(text, behavior):
     await asyncio.gather(sami.perform_behavior_async(behavior), TTS.speak_async(text))
@@ -53,13 +54,65 @@ def characterCreation():
         print(characters_txt)
         ai_client.reset()
 
-    ai_response = ai_client.chat(f"You are a dungeon master for a dnd campaign. Welcome your breifly players to the campaign and in three sentences or less describe the opening scene. The following is a list of the players character:\n{characters_txt}")
-    TTS.speak(ai_response)
+    return characters_txt
+
+def interpretResponse(response):
+    print(f"Response: {response}")    
+    if '{' in response:
+        dice_string = response.split('"Sides": ')[1]
+        dice_string = dice_string[:-2]
+        print(response[response.index("{")+1:response.index("}")])
+        side_count = int(dice_string)
+
+        dice_result = DiceRoll.face_roll(sami, roll_range=(1, side_count))
+        interpretResponse(response[:response.index("{")] + ai_client.chat(str(dice_result)))
+        return
+
+    last_emote = None
+    speech_txt = ""
+    while ']' in response:
+        end_idx = response.index(']')
+        start = response[:end_idx]
+        response = response[(end_idx+1):]
+
+        start_idx = start.index('[')
+        speech_txt = start[:start_idx]
+
+        if last_emote is None and len(speech_txt) != 0:
+            print("here")
+            TTS.speak(speech_txt)
+        elif len(speech_txt) != 0:
+            print("here2")
+            asyncio.run(talk_while_moving(speech_txt, last_emote))
+
+        last_emote = start[start_idx+1:] + ".json"
+
+    speech_txt = response
+    if last_emote is None:
+        TTS.speak(speech_txt)
+    else:
+        asyncio.run(talk_while_moving(speech_txt, last_emote))
+
+def runSession(characters):
+    initial_prompt = "Say error occured"
+    with open('AIDnd/gemma3_prompt.txt', 'r') as file:
+        initial_prompt = "\n".join(file.readlines())
+        initial_prompt += f"\nIn your campaign are the following characters:\n{characters}"
+
+    ai_client.reset()
+    response = ai_client.chat(initial_prompt)
+
+    while True:
+        # TTS.speak(response)
+        interpretResponse(response)
+        input = STT.transcribe()
+        response = ai_client.chat(input)
 
 sami = SamiControll(arduino_port='/dev/ttyUSB0')
 
 credentials = open("ollama_credentials", "r").readline()
-ai_client = OllamaWrapper(model="gemma3:1b", credentials=credentials)
+ai_client = OllamaWrapper(model="gemma3:4b", credentials=credentials)
 # print(ai_client.chat("Hello?"))
 
-characterCreation()
+# characters = characterCreation()
+runSession("Name: Bob, Class: Rouge")
