@@ -23,7 +23,7 @@
                 },
                 {
                     "Joint": "RightChest",
-                    "Angle": 60
+                    "Angle": 180
                 },
                 {
                     "Joint": "TorsoBow",

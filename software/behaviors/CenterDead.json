@@ -18,16 +18,24 @@
                     "Angle": 115
                 },
                 {
-                    "Joint": "LeftChest",
+                    "Joint": "RightChest",
                     "Angle": 145
                 },
                 {
-                    "Joint": "RightChest",
+                    "Joint": "LeftChest",
                     "Angle": 105
                 },
                 {
                     "Joint": "RightElbow",
                     "Angle": 80
+                },
+                {
+                    "Joint": "RightShoulder",
+                    "Angle": 90
+                },
+                {
+                    "Joint": "LeftShoulder",
+                    "Angle": 175
                 }
 
 
